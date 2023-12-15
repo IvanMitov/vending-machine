@@ -2,9 +2,8 @@
 
 ## Installation
 1. clone the repo
-5. `cd vending-machine`
-6. run `npm install`
-7. run `npm start`
+2. run `npm install`
+3. run `npm start`
 
 ## Usage
 * insert your coins by clicking on it
