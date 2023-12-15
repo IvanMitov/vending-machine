@@ -2,15 +2,14 @@
 
 ## Installation
 1. clone the repo
-5. `cd vending-machine-app/`
+5. `cd vending-machine`
 6. run `npm install`
 7. run `npm start`
 
 ## Usage
 * insert your coins by clicking on it
 
-* choose quantity of the product you want
-* quantity button "+" and "-"
+* choose quantity of the product you want from buttons "+" and "-"
 
 * click on code button corresponding to the product code you want
 * click on the green button to collect change and product if purchase is successful
