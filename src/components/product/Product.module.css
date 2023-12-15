@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EDF2F2;
+    background-color: rgba(255, 255, 255, 0.27);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    row-gap: 1rem;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.container p, .container h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.title {
+    padding: 0.875rem 0.5rem;
+    background-color: rgba(77, 99, 125, 0.1);
+    border-radius: 10px 10px 0 0;
+    font-size: 1.1rem;
+}
+
+.priceText {
+    padding: 0.5rem;
+    background-color: #d9edf7
+}
+
+.infoSection {
+    margin-top: auto;
+}
+
+.quantityText {
+    padding: 0.5rem;
+    background-color: #dff0d8;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.75rem;
+    margin-top: auto!important;
+}
+
+.quantityText.quantityEmpty {
+    background-color: #f2dede;
+}

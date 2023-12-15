@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-color: #EDF2F2;
+  border-radius: 5px;
+  border: #ececec;
+  cursor: pointer;
+  outline: none;
+  padding: 0.25rem 0.5rem;
+}
+
+button[disabled] {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+button:hover:not([disabled]) {
+  background-color: #dce1e1;
+}
+
+button.successBtn {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+button.successBtn:hover:not([disabled]) {
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.bb {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.error {
+  color: #C50D2E;
+}
+
+.app {
+    display: grid;
+}
+
+.wrapper {
+  display: grid;
+  width: 90vw;
+  margin: 1rem auto;
+  grid-template-areas: "header" "main";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  border: 1px solid rgb(77, 99, 125);
+  border-radius: 5px;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.products {
+  display: grid;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  gap: 1em;
+  grid-template-columns: repeat(1, auto);
+
+}
+
+.sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1.5rem;
+  padding: .5rem;
+  grid-template-columns: 100%;  
+  border-left: 1px solid #dbdbdb;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 780px) {
+  .wrapper {
+    width: 70vw;
+    margin: 1rem auto auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .mainContent {
+    grid-template-columns: 70% 30%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 1200px) {
+  .products {
+    grid-template-columns: repeat(4, auto);
   }
 }

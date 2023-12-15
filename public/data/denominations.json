@@ -1,0 +1,27 @@
+[
+    {
+        "currencyId": 123,
+        "currencySymbol": "lv",
+        "denomination": 0.1
+    },
+    {
+        "currencyId": 123,
+        "currencySymbol": "lv",
+        "denomination": 0.2
+    },
+    {
+        "currencyId": 123,
+        "currencySymbol": "lv",
+        "denomination": 0.5
+    },
+    {
+        "currencyId": 123,
+        "currencySymbol": "lv",
+        "denomination": 1
+    },
+    {
+        "currencyId": 123,
+        "currencySymbol": "lv",
+        "denomination": 2
+    }
+]

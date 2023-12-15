@@ -1,0 +1,66 @@
+[
+    {
+        "id": "d87ecd6e-6e97-4aa5-ae3b-d9d166925e98",
+        "name": "Water",
+        "imageUrl": "./assets/images/water.gif",
+        "price": 1,
+        "currencyId": 123,
+        "available": 15
+    },
+    {
+        "id": "86ae3f14-72a8-44b5-b8f9-5003823e725d",
+        "name": "Coca Cola",
+        "imageUrl": "./assets/images/coca-cola.jpg",
+        "price": 1.8,
+        "currencyId": 123,
+        "available": 7
+    },
+    {
+        "id": "6c8b6a43-a04a-459f-8015-18389d87a702",
+        "name": "Twix",
+        "imageUrl": "./assets/images/twix.jpg",
+        "price": 1.5,
+        "currencyId": 123,
+        "available": 11
+    },
+    {
+        "id": "477eaf0d-7a82-4bd0-9fb2-4e079c838327",
+        "name": "Chips",
+        "imageUrl": "./assets/images/chips.jpg",
+        "price": 2.8,
+        "currencyId": 123,
+        "available": 4
+    },
+    {
+        "id": "817dd0b2-de2b-4c04-bf31-deacd2dc667f",
+        "name": "Chocolate",
+        "imageUrl": "./assets/images/chocolate.jpg",
+        "price": 4.5,
+        "currencyId": 123,
+        "available": 5
+    },
+    {
+        "id": "d87ecd6e-6e97-4aa5-ae3b-gr942jl3447j",
+        "name": "Peanuts",
+        "imageUrl": "./assets/images/peanuts.jpg",
+        "price": 7.6,
+        "currencyId": 123,
+        "available": 9
+    },
+    {
+        "id": "9fa7b408-e343-46af-922d-c470c860f1fc",
+        "name": "Chewing gum",
+        "imageUrl": "./assets/images/chewing-gum.jpg",
+        "price": 1.7,
+        "currencyId": 123,
+        "available": 13
+    },
+    {
+        "id": "d87ecd6e-6e97-4aa5-ae3b-c385g342d35k",
+        "name": "Doritos",
+        "imageUrl": "./assets/images/doritos.jpg",
+        "price": 3.2,
+        "currencyId": 123,
+        "available": 4
+    }
+]
