@@ -14,8 +14,8 @@ const QuantityCounter: FC<QuantityCounterProps> = ({
 }) => (
   <div className={styles.container}>
     <StatsRow text="Quantity" value={quantity} />
-    <button onClick={() => onCountActionClick(true)}>+</button>
-    <button onClick={() => onCountActionClick(false)}>-</button>
+    <button onClick={() => onCountActionClick(true)}>&#43;</button>
+    <button onClick={() => onCountActionClick(false)}>&#8722;</button>
   </div>
 );
 

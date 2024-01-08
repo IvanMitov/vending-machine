@@ -30,8 +30,7 @@ function App() {
     setLocalProducts(products);
   }, [products]);
 
-
-  const handleCoinClick = useCallback((coins: number) => setMoney(money + coins), [money]);
+  const handleCoinClick = useCallback((coins: number) => setMoney(money => money += coins), []);
 
   const handleCountActionClick = useCallback((increment: boolean) => {
     if (quantity <= 1 && !increment) return;
@@ -43,8 +42,7 @@ function App() {
     if (orderedProduct) {
       setWarning(`Collect your ${orderedProduct.name} first and then make new purchase.`);
     } else if (changeValue < 0) {
-      setChange(0);
-      setWarning(`Not enough money. Need more ${Math.abs(changeValue).toFixed(2)}`);
+      setWarning(`Not enough money. Need more ${Math.abs(changeValue)}`);
     } else if (product.available < quantity) {
       setWarning(`Not enough quantity of ${product.name} ( ${product.available} left )`);
     } else {
@@ -52,7 +50,8 @@ function App() {
       setLocalProducts(products => products?.map(p =>
         p.id === product.id ? { ...p, available: p.available - quantity } : p)
       );
-      resetMachine(changeValue);
+      setChange(changeValue);
+      resetMachine();
     }
   }, [money, quantity, orderedProduct]);
 
@@ -62,10 +61,9 @@ function App() {
     setWarning("");
   }, []);
 
-  const resetMachine = useCallback((changeValue: number) => {
+  const resetMachine = useCallback(() => {
     setMoney(0);
     setQuantity(1);
-    setChange(changeValue);
     setWarning("");
   }, []);
 
@@ -86,7 +84,7 @@ function App() {
             {loadingDenominations && <Loader />}
             <SectionWrapper title="Coins ( Lv ):" appendDivider>
               <Denomination denominations={denominations} onCoinClick={handleCoinClick} />
-              <BalanceStats credits={money} onResetClick={() => resetMachine(change)} />
+              <BalanceStats credits={money} onResetClick={resetMachine} />
               {warning && <p className='error m0'>{warning}</p>}
               <QuantityCounter
                 quantity={quantity}
